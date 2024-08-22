@@ -83,7 +83,7 @@ const ContactForm = () => {
               type="text"
               value={firstName}
               onChange={(event) => setFirstName(event.target.value)}
-              className="border-2 border-gray-200 outline-emerald-600 hover:border-emerald-600  focus:bg-emerald-50  p-2 rounded-md"
+              className="border-2 border-gray-200 outline-[#0c7d69] hover:border-[#0c7d69]  focus:bg-emerald-50  p-2 rounded-md"
               placeholder="First Name"
             />
             {errors.firstName && (
@@ -91,12 +91,12 @@ const ContactForm = () => {
             )}
           </div>
           <div className="flex flex-col text-left gap-1">
-            <label className="font-medium">Last Name <span className='text-emerald-600'>*</span></label>
+            <label className="font-medium">Last Name <span className='text-[#0c7d69]'>*</span></label>
             <input
               type="text"
               value={lastName}
               onChange={(event) => setLastName(event.target.value)}
-              className="border-2 border-gray-200 outline-emerald-600 hover:border-emerald-600 focus:bg-emerald-50 p-2 rounded-md"
+              className="border-2 border-gray-200 outline-[#0c7d69] hover:border-[#0c7d69] focus:bg-emerald-50 p-2 rounded-md"
               placeholder="Last Name"
             />
             {errors.lastName && (
@@ -105,12 +105,12 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="flex flex-col text-left gap-1">
-          <label className="font-medium">Email Address <span className='text-emerald-600'>*</span></label>
+          <label className="font-medium">Email Address <span className='text-[#0c7d69]'>*</span></label>
           <input focus:bg-emerald-50
             type="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            className="border-2 border-gray-200 outline-emerald-600 hover:border-emerald-600 focus:bg-emerald-50 p-2 rounded-md"
+            className="border-2 border-gray-200 outline-[#0c7d69] hover:border-[#0c7d69] focus:bg-emerald-50 p-2 rounded-md"
             placeholder="Email Address"
           />
           {errors.email && (
@@ -118,9 +118,9 @@ const ContactForm = () => {
           )}
         </div>
         <div className="flex flex-col text-left gap-4">
-          <label className="font-medium">Query Type <span className='text-emerald-600'>*</span></label>
+          <label className="font-medium">Query Type <span className='text-[#0c7d69]'>*</span></label>
           <div className="grid sm:grid-cols-2 gap-4">
-            <div className="flex items-center border-2 border-gray-200 outline-emerald-600 hover:border-emerald-600 focus:bg-emerald-50 p-2 rounded-md">
+            <div className="flex items-center border-2 border-gray-200 outline-[#0c7d69] hover:border-[#0c7d69]  focus:bg-emerald-50 p-2 rounded-md">
               <input
                 type="radio"
                 name="genderEnquiry"
@@ -128,11 +128,11 @@ const ContactForm = () => {
                 value="general"
                 checked={genderEnquiry === 'general'}
                 onChange={(event) => setGenderEnquiry(event.target.value)}
-                className="accent-emerald-600"
+                className="accent-[#0c7d69]"
               />
               <label htmlFor="general" className="ml-2 font-medium">General Enquiry</label>
             </div>
-            <div className="flex items-center border-2 border-gray-200 outline-emerald-600 hover:border-emerald-600 focus:bg-emerald-50 p-2 rounded-md">
+            <div className="flex items-center border-2 border-gray-200 outline-[#0c7d69] hover:border-[#0c7d69]  focus:bg-emerald-50 p-2 rounded-md">
               <input
                 type="radio"
                 name="genderEnquiry"
@@ -140,7 +140,7 @@ const ContactForm = () => {
                 value="support"
                 checked={genderEnquiry === 'support'}
                 onChange={(event) => setGenderEnquiry(event.target.value)}
-                className="accent-emerald-600"
+                className="accent-[#0c7d69]"
               />
               <label htmlFor="support" className="ml-2 font-medium">Support Request</label>
             </div>
@@ -150,11 +150,11 @@ const ContactForm = () => {
           )}
         </div>
         <div className="flex flex-col text-left gap-1">
-          <label className="font-medium">Message <span className='text-emerald-600'>*</span></label>
+          <label className="font-medium">Message <span className='text-[#0c7d69]'>*</span></label>
           <textarea
             value={message}
             onChange={(event) => setMessage(event.target.value)}
-            className="border-2 border-gray-200 outline-emerald-600 hover:border-emerald-600 focus:bg-emerald-50 p-2 rounded-md"
+            className="border-2 border-gray-200 outline-[#0c7d69] hover:border-[#0c7d69] focus:bg-emerald-50 p-2 rounded-md"
             placeholder="Message"
           />
           {errors.message && (
@@ -167,7 +167,7 @@ const ContactForm = () => {
               type="checkbox"
               checked={subscribe}
               onChange={(event) => setSubscribe(event.target.checked)}
-              className="accent-emerald-600"
+              className="accent-[#0c7d69] "
             
             />
             <label >I consent to being contacted by the team</label>
@@ -178,7 +178,7 @@ const ContactForm = () => {
         </div>
         
         <button
-          className="bg-emerald-600 hover:bg-emerald-700  text-white p-2 rounded-md"
+          className="bg-[#0c7d69] hover:bg-[#084f42] text-white p-2 rounded-md"
           type="submit"
         >
           Submit

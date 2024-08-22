@@ -8,7 +8,7 @@ const SubmitModal = () => {
     initial={{ opacity: 0, scale: 0 }}
     animate={{ opacity: 1, scale: 1 }}
     //position top center of the screen
-     className='absolute top-0    grid place-content-start gap-2 bg-emerald-900 my-4 p-4 rounded-md'>
+     className='absolute top-0    grid place-content-start gap-2 bg-[#084f42] my-4 p-4 rounded-md'>
       <div className=' flex items-center gap-2'>
         <img src={img} className='' />
         <p className=' text-lg text-white text-center'>Message Sent!</p>
